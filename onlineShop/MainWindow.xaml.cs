@@ -20,5 +20,20 @@ namespace onlineShop
         {
             InitializeComponent();
         }
-    }
+
+		private void termektipus1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+		{
+
+		}
+
+		private void termektipus2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+		{
+
+		}
+
+		private void termektipus3_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+		{
+
+		}
+	}
 }

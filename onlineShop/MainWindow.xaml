@@ -6,7 +6,33 @@
         xmlns:local="clr-namespace:onlineShop"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Window.Resources>
+        <ResourceDictionary Source="Resources/Dictionary1.xaml" />
+    </Window.Resources>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left" Width="200" Background="Gray">
+            <ListView >
 
-    </Grid>
+                <ListViewItem x:Name="termektipus1" 
+                                  Content="termektipus1"
+                                  MouseLeftButtonUp="termektipus1_MouseLeftButtonUp"
+               
+                />
+                <ListViewItem x:Name="termektipus2" 
+                              Content="termektipus2"
+                              MouseLeftButtonUp="termektipus2_MouseLeftButtonUp"
+                              />
+                <ListViewItem x:Name="termektipus3" 
+                              Content="termektipus3"
+                              MouseLeftButtonUp="termektipus3_MouseLeftButtonUp"
+                              />
+
+
+            </ListView>
+        </StackPanel>
+
+
+        <StackPanel DockPanel.Dock="Right" Background="LightGray"></StackPanel>
+    </DockPanel>
+        
 </Window>
