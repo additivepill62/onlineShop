@@ -17,10 +17,11 @@ namespace onlineShop.Model
 		public string City { get; set; }
 		public string Country { get; set; }
 		public int LoyaltyPoints { get; set; }
+		public List<string> OrderHistory { get; set; } = new List<string>();
 
-		public Customer(string name, string email, string password, string address, string city, string country, int loyaltyPoints)
+		public Customer(List<string> orderhistory, string name, string email, string password, string address, string city, string country, int loyaltyPoints)
 		{
-			
+			OrderHistory = orderhistory;
 			Name = name;
 			Email = email;
 			Password = password;

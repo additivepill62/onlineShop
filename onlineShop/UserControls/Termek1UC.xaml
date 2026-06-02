@@ -6,7 +6,10 @@
              xmlns:local="clr-namespace:onlineShop.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="434.04" d:DesignWidth="600">
-    <Grid ShowGridLines="True">
+    <UserControl.Resources>
+        <ResourceDictionary Source="../Resources/Dictionary2.xaml" />
+    </UserControl.Resources>
+    <Grid ShowGridLines="False" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"></ColumnDefinition>
             <ColumnDefinition Width="1*"></ColumnDefinition>
@@ -20,10 +23,82 @@
 
 
         </Grid.RowDefinitions>
-        <Button 
-        Grid.Column="2"
-        Grid.Row="2"
-        Background="DarkCyan" Foreground="White" Content="Ez egy gomb"></Button>
-        <TextBox Text="Ide írhastz szöveget"></TextBox>
+        
+            <StackPanel Grid.Column="0" Grid.Row="0" Background="LightGray">
+                <Rectangle Width="100" Height="100" Fill="Moccasin"></Rectangle>
+                <DockPanel>
+                    <TextBlock Margin="7,0,0,0" Text="Szoveg"  DockPanel.Dock="Left"></TextBlock>
+                    <TextBlock Margin="0,0,7,0" Text="$432" TextAlignment="Right" DockPanel.Dock="Right"></TextBlock>
+                </DockPanel>
+                <Button Width="100" Content="Kosárhoz adás" x:Name="KosarBTN1" Click="KosarBTN1_Click"></Button>
+            </StackPanel>
+        
+        <StackPanel Grid.Column="1" Grid.Row="0" >
+            <Rectangle Width="100" Height="100" Fill="Moccasin"></Rectangle>
+            <DockPanel>
+                <TextBlock Margin="7,0,0,0" Text="Szoveg2"  DockPanel.Dock="Left"></TextBlock>
+                <TextBlock Margin="0,0,7,0" Text="$43232" TextAlignment="Right" DockPanel.Dock="Right"></TextBlock>
+            </DockPanel>
+            <Button Width="100" Content="Kosárhoz adás" x:Name="kosarBTN2" Click="kosarBTN2_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="1" >
+            <Rectangle Width="100" Height="100" Fill="Moccasin"></Rectangle>
+            <DockPanel>
+                <TextBlock Margin="7,0,0,0" Text="Szoveg3"  DockPanel.Dock="Left"></TextBlock>
+                <TextBlock Margin="0,0,7,0" Text="$4" TextAlignment="Right" DockPanel.Dock="Right"></TextBlock>
+            </DockPanel>
+            <Button Width="100" Content="Kosárhoz adás" x:Name="kosarBTN3" Click="kosarBTN3_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" >
+            <Rectangle Width="100" Height="100" Fill="Moccasin"></Rectangle>
+            <DockPanel>
+                <TextBlock Margin="7,0,0,0" Text="Szoveg4"  DockPanel.Dock="Left"></TextBlock>
+                <TextBlock Margin="0,0,7,0" Text="$42" TextAlignment="Right" DockPanel.Dock="Right"></TextBlock>
+            </DockPanel>
+            <Button Width="100" Content="Kosárhoz adás" x:Name="kosarBTN4" Click="kosarBTN4_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="0" >
+            <Rectangle Width="100" Height="100" Fill="Moccasin"></Rectangle>
+            <DockPanel>
+                <TextBlock Margin="7,0,0,0" Text="Szove6g"  DockPanel.Dock="Left"></TextBlock>
+                <TextBlock Margin="0,0,7,0" Text="$43211" TextAlignment="Right" DockPanel.Dock="Right"></TextBlock>
+            </DockPanel>
+            <Button Width="100" Content="Kosárhoz adás" x:Name="kosarBTN5" Click="kosarBTN5_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1" >
+            <Rectangle Width="100" Height="100" Fill="Moccasin"></Rectangle>
+            <DockPanel>
+                <TextBlock Margin="7,0,0,0" Text="Szoveg7"  DockPanel.Dock="Left"></TextBlock>
+                <TextBlock Margin="0,0,7,0" Text="$4321" TextAlignment="Right" DockPanel.Dock="Right"></TextBlock>
+            </DockPanel>
+            <Button Width="100" Content="Kosárhoz adás" x:Name="kosarBTN6" Click="kosarBTN6_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="2" >
+            <Rectangle Width="100" Height="100" Fill="Moccasin"></Rectangle>
+            <DockPanel>
+                <TextBlock Margin="7,0,0,0" Text="Szoveg8"  DockPanel.Dock="Left"></TextBlock>
+                <TextBlock Margin="0,0,7,0" Text="$7" TextAlignment="Right" DockPanel.Dock="Right"></TextBlock>
+            </DockPanel>
+            <Button Width="100" Content="Kosárhoz adás" x:Name="kosarBTN7" Click="kosarBTN7_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="3" >
+            <Rectangle Width="100" Height="100" Fill="Moccasin"></Rectangle>
+            <DockPanel>
+                <TextBlock Margin="7,0,0,0" Text="Szoveg9"  DockPanel.Dock="Left"></TextBlock>
+                <TextBlock Margin="0,0,7,0" Text="$89" TextAlignment="Right" DockPanel.Dock="Right"></TextBlock>
+            </DockPanel>
+            <Button Width="100" Content="Kosárhoz adás" x:Name="kosarBTN8" Click="kosarBTN8_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="3" >
+            <Rectangle Width="100" Height="100" Fill="Moccasin"></Rectangle>
+            <DockPanel>
+                <TextBlock Margin="7,0,0,0" Text="Szoveg5"  DockPanel.Dock="Left"></TextBlock>
+                <TextBlock Margin="0,0,7,0" Text="Ł1000" TextAlignment="Right" DockPanel.Dock="Right"></TextBlock>
+            </DockPanel>
+            <Button Width="100" Content="Kosárhoz adás" x:Name="kosarBTN9" Click="kosarBTN9_Click"></Button>
+        </StackPanel>
+        
+        
+        
     </Grid>
 </UserControl>

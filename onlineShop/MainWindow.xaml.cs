@@ -23,12 +23,14 @@ namespace onlineShop
 
 		private void termektipus1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 		{
-
+			UCSpace.Children.Clear();
+			UCSpace.Children.Add(new UserControls.Termek1UC());
 		}
 
 		private void termektipus2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 		{
-
+			UCSpace.Children.Clear();
+			UCSpace.Children.Add(new UserControls.Termek2UC());
 		}
 
 		private void termektipus3_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

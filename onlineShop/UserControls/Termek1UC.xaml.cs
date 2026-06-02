@@ -1,4 +1,5 @@
-﻿using System;
+﻿using onlineShop.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,51 @@ namespace onlineShop.UserControls
 		public Termek1UC()
 		{
 			InitializeComponent();
+		}
+
+		private void KosarBTN1_Click(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("A termék hozzáadva a kosárhoz!");
+		}
+
+		private void kosarBTN2_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void kosarBTN3_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void kosarBTN4_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void kosarBTN5_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void kosarBTN6_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void kosarBTN7_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void kosarBTN8_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void kosarBTN9_Click(object sender, RoutedEventArgs e)
+		{
+
 		}
 	}
 }
