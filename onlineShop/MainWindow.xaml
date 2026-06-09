@@ -1,38 +1,46 @@
-﻿<Window x:Class="onlineShop.MainWindow"
+<Window x:Class="onlineShop.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:onlineShop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="900">
+        Title="MainWindow" Height="550" Width="900"
+        MinWidth="900" MinHeight="350">
     <Window.Resources>
         <ResourceDictionary Source="Resources/Dictionary1.xaml" />
     </Window.Resources>
+
     <DockPanel>
+        <!-- Felső sáv -->
+        <DockPanel DockPanel.Dock="Top" Height="30" Background="Gray">
+            <Button x:Name="mainWKosarBTN" Click="mainWKosarBTN_Click"
+                    Content="Kosár" DockPanel.Dock="Right"
+                    Width="80" Height="22" Margin="0,0,10,0" />
+        </DockPanel>
+
+        <!-- Bal oldali kategória lista -->
         <StackPanel DockPanel.Dock="Left" Width="200" Background="Gray">
-            <ListView >
-
-                <ListViewItem x:Name="termektipus1" 
-                                  Content="termektipus1"
-                                  MouseLeftButtonUp="termektipus1_MouseLeftButtonUp"
-               
-                />
-                <ListViewItem x:Name="termektipus2" 
-                              Content="termektipus2"
-                              MouseLeftButtonUp="termektipus2_MouseLeftButtonUp"
-                              />
-                <ListViewItem x:Name="termektipus3" 
-                              Content="termektipus3"
-                              MouseLeftButtonUp="termektipus3_MouseLeftButtonUp"
-                              />
-
-
+            <ListView Background="Gray">
+                <ListViewItem x:Name="termektipus1"
+                              Content="Termék típus 1"
+                              MouseLeftButtonUp="termektipus1_MouseLeftButtonUp" />
+                <ListViewItem x:Name="termektipus2"
+                              Content="Termék típus 2"
+                              MouseLeftButtonUp="termektipus2_MouseLeftButtonUp" />
+                <ListViewItem x:Name="termektipus3"
+                              Content="Termék típus 3"
+                              MouseLeftButtonUp="termektipus3_MouseLeftButtonUp" />
             </ListView>
         </StackPanel>
 
+        <!--Scrollbar-->
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+            <WrapPanel x:Name="UCSpace"
+                       Background="#a3a3a3"
+                       Orientation="Horizontal" />
+        </ScrollViewer>
 
-        <StackPanel DockPanel.Dock="Right" Background="#a3a3a3" x:Name="UCSpace"></StackPanel>
     </DockPanel>
-        
 </Window>
