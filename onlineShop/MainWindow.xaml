@@ -16,7 +16,7 @@
         <DockPanel DockPanel.Dock="Top" Height="30" Background="Gray">
             <Button x:Name="mainWKosarBTN" Click="mainWKosarBTN_Click"
                     Content="Kosár" DockPanel.Dock="Right"
-                    Width="80" Height="22" Margin="0,0,10,0" />
+                    Width="80" Height="22" Margin="800,0,0,0" />
         </DockPanel>
 
         <!-- Bal oldali kategória lista -->

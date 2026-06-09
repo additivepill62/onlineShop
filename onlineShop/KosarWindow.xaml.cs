@@ -22,6 +22,13 @@ namespace onlineShop
 		public KosarWindow()
 		{
 			InitializeComponent();
+			UCSpace.Children.Clear();
+			UCSpace.Children.Add(new UserControls.KosarUC());
 		}
-	}
+
+		private void VisszaBTN_Click(object sender, RoutedEventArgs e)
+		{
+			this.Close();
+        }
+    }
 }

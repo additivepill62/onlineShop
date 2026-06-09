@@ -45,8 +45,8 @@ namespace onlineShop.UserControls
         {
             if (sender is Button btn && btn.Tag is Termek termek)
             {
-                // TODO: DatabaseService.Instance.KosarbaAd(termek.Id, mennyiseg: 1);
-                MessageBox.Show($"{termek.Nev} hozzáadva a kosárhoz!");
+				DatabaseService.Instance.KosarbaAd(termek.Id, 1);
+				MessageBox.Show($"{termek.Nev} hozzáadva a kosárhoz!");
             }
         }
     }

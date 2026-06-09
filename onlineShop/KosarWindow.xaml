@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:onlineShop"
         mc:Ignorable="d"
-        Title="KosarWindow" Height="450" Width="800">
-    <Grid>
+        Title="KosarWindow" Height="450" Width="800"
         
-    </Grid>
+        ResizeMode="NoResize"
+        > 
+
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" Height="30" Background="Gray">
+        <Button x:Name="VisszaBTN"  Click="VisszaBTN_Click"
+            Content="Vissza" DockPanel.Dock="Right"
+            Width="80" Height="22" Margin="700,0,0,0" />
+    </DockPanel>
+    
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+              HorizontalScrollBarVisibility="Disabled">
+        <WrapPanel x:Name="UCSpace"
+               Background="#a3a3a3"
+               Orientation="Horizontal" />
+    </ScrollViewer>
+    </DockPanel>
+    
 </Window>
